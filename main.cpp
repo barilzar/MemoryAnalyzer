@@ -14,6 +14,7 @@ int main(int argc, char* argv[]){
 		time;
 
 	char* cache;
+	
 	//arg format: program <object count> <object size> <sleep time>
 	if(argc != 4){
 		cout << "Use: program <object count> <object size> <sleep time>" << endl;
@@ -36,14 +37,6 @@ int main(int argc, char* argv[]){
 		Sleep(time);
 	}
 
-/*
-	BypassAllocator<int> all;
-	vector<int, BypassAllocator<int>> vec (all);
-	uint64_t i;
-
-	for(i = 0; i < 100; ++i)
-		vec.push_back(i);
-*/
 	char c;
 	std::cin >> c;
 

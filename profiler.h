@@ -61,7 +61,7 @@ public:
 	}
 
 	inline void untrackPointer(void* p){
-		/*No checks on the pointer are done as untracking of a pointer that was never 
+		/* No checks on the pointer are done as untracking of a pointer that was never 
 		tracked is a valid operation (as is the untracking of NULL as well)*/
 		trackedPointers->erase(p);
 	}

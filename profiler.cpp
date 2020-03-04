@@ -68,7 +68,7 @@ void Profiler::report(){
 }
 
 void Profiler::setNewOutputStream(std::ofstream* o){
-	//Check if the stream is controlled by this object or not
+	//Check if the stream is controlled by this object or not:
 	if(iHazStreamz){
 		//Get rid of the previous stream
 		outputStream->close();

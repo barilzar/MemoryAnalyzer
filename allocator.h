@@ -6,6 +6,7 @@ public:
 
 	/*Typedefs needed by other classes (not used in this class, but 
 	these need to be defined for the classes that use this allocator)*/
+	
 	typedef		T					value_type;
     typedef		value_type*			pointer;
     typedef		const value_type*	const_pointer;

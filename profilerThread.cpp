@@ -8,8 +8,8 @@ RunnableProfiler* RunnableProfiler::me = NULL;
 RunnableProfiler* RunnableProfiler::getInstance(){
 	if(!me)
 		/* Standard global new has been already redefined, so in order to
-		 * prevent endless recursion placement new and malloc must be used 
-		 * instead 
+		 * prevent endless recursion, placement new and malloc must be used 
+		 * instead.
 		 */
 		me = new (malloc(sizeof(RunnableProfiler))) RunnableProfiler;
 

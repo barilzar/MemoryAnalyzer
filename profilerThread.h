@@ -22,6 +22,6 @@ private:
 	RunnableProfiler(const RunnableProfiler&);
 	RunnableProfiler& operator= (const RunnableProfiler&);
 
-	//This function MUST be defined like this in order to be used with the win API
+	//This function must be defined like this in order to comply with the win API
 	static void run(void* p);
 };
